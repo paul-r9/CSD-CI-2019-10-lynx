@@ -1,8 +1,9 @@
 # r9-isbn-ci-lynx
 Continuous Integration exercise using ISBN kata and Azure Pipelines 
 
-- TODO: add build status badge
-- TODO: add link to Azure DevOps Project page
+[![Build Status](https://dev.azure.com/paul0287/CSD-CI-2019-10-LYNX/_apis/build/status/paul-r9.CSD-CI-2019-10-lynx?branchName=master)](https://dev.azure.com/paul0287/CSD-CI-2019-10-LYNX/_build/latest?definitionId=5&branchName=master)
+
+[Azure DevOps Project page](https://dev.azure.com/paul0287/CSD-CI-2019-10-LYNX)
 
 # Tasks
 - ISBN10
