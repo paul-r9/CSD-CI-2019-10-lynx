@@ -71,6 +71,19 @@ namespace ISBN {
         public void PaulIsTryingToTriggerABuild() {
             Assert.True(true);
         }
+
+        [Fact]
+        public void Retrieve_ISB13()
+        {
+	        var ISBN = "9780321146533";
+	        ISBNFinder sut = new ISBNFinder();
+	        BookInfo actual = sut.lookup(ISBN);
+
+	        BookInfo expected = new BookInfo("Test Driven Development by Example", "Kent Beck", "0321146530", "9780321146533");
+	        Assert.Equal(expected.ToString(), actual.ToString());	        
+	        
+        }
+        
     }
 
 }
