@@ -54,6 +54,11 @@ namespace ISBN {
 //            // delete it and commit the change to fix the broken build
 //            throw new Xunit.Sdk.XunitException("xUnit does not have an Assert.'Fail' ");
 //        }
+
+        [Fact]
+        public void PaulIsTryingToTriggerABuild() {
+            Assert.True(true);
+        }
     }
 
 }
