@@ -11,8 +11,9 @@ namespace ISBN {
             isbnService = bookInfoProvider;
         }
         
-        public BookInfo lookup(string ISBN) {
-            
+        public BookInfo lookup(string ISBN)
+        {
+	        ISBN = ISBN.Replace(" ", "").Replace("-", "");
             if (ISBN.Length != 10) {
                 BookInfo badISBN = new BookInfo("ISBN must be 10 characters in length");
                 return badISBN;
