@@ -59,6 +59,18 @@ namespace ISBN {
         public void PaulIsTryingToTriggerABuild() {
             Assert.True(true);
         }
+
+        [Fact]
+        public void ISBN10_Validate_Check_Sum()
+        {
+            var isbnNumber10 = "0471958697";
+
+            ISBNFinder sut = new ISBNFinder();
+            BookInfo actual = sut.lookup(isbnNumber10);
+
+            Assert.Equal(7, sut.IsValidIsbn10(isbnNumber10));
+        }
+    
     }
 
 }

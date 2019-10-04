@@ -26,5 +26,21 @@ namespace ISBN {
             
             return bookInfo;
         }
+
+        public int IsValidIsbn10(string isbnNumber10)
+        {
+            int sum = 0;
+
+            for (int i = 0; i < isbnNumber10.Length-1; i++)
+            {
+                int num = int.Parse(isbnNumber10[i].ToString());
+
+                sum += num *(i+1);
+            }
+
+            int lastDigit = sum % 11;
+
+            return lastDigit;
+        }
     }
 }
